@@ -66,7 +66,6 @@ const MyPortfolio = () => {
           id: 2,
           name: "Material UI,",
         },
-        ,
         {
           id: 3,
           name: 'React Redux,'
