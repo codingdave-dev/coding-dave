@@ -3,8 +3,11 @@ import PropTypes from "prop-types";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "../src/theme";
-
 import Header from "../src/ui/Header";
+
+import ReactGA from 'react-ga'
+
+// ReactGA.initialize('pasteTrackingCodeHere')
 
 const MyApp = (props) => {
   const { Component, pageProps } = props;

@@ -15,6 +15,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
+import ReactGA from 'react-ga'
+
 const useStyles = makeStyles((theme) => ({
   tabContainer: {
     marginLeft: "auto",
@@ -101,6 +103,8 @@ const Header = ({ value, setValue }) => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [open, setOpen] = useState(false);
 
+  const [previousURL, setPreviousURL] = useState('')
+
   // HANDLERS
   const handleChange = (e, newValue) => {
     setValue(newValue);
@@ -137,6 +141,11 @@ const Header = ({ value, setValue }) => {
   ];
 
   useEffect(() => {
+    if (previousURL !== window.location.pathname) {
+      setPreviousURL(window.location.pathname)
+      // ReactGA.pageview(window.location.pathname + window.location.search)
+    }
+
     [...routes].forEach((route) => {
       switch (window.location.pathname) {
         case `${route.link}`:
