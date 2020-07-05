@@ -82,19 +82,66 @@ const ProfileHeader = () => {
           <Grid item style={{ marginTop: "1em" }}>
             <Grid item container spacing={2}>
               <Grid item>
-                <GitHubIcon className={classes.socialIcon} />
+                <a
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"https://github.com/codingdave-dev"}
+                  target={"_blank"}
+                  aria-owns={"CodingDave gitHub Link"}
+                >
+                  <GitHubIcon className={classes.socialIcon} />
+                </a>
               </Grid>
               <Grid item>
-                <FacebookIcon className={classes.socialIcon} />
+                <a
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={
+                    "https://www.facebook.com/codingDave.dev/?eid=ARCmHFMi1v7kKZNDB9eN9Ks5QXhSh8dR0FBIwElneNgxiVcs7sLVdmx97c_xdV3Td1r-_piMerskk50C"
+                  }
+                  target={"_blank"}
+                  aria-owns={"CodingDave Facebook Link"}
+                >
+                  <FacebookIcon className={classes.socialIcon} />
+                </a>
               </Grid>
               <Grid item>
-                <TwitterIcon className={classes.socialIcon} />
+                <a
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"https://twitter.com/coding_dave"}
+                  target={"_blank"}
+                  aria-owns={"CodingDave Twitter Link"}
+                >
+                  <TwitterIcon className={classes.socialIcon} />
+                </a>
               </Grid>
               <Grid item>
-                <InstagramIcon className={classes.socialIcon} />
+                <a
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"https://www.instagram.com/codingdave.dev/"}
+                  target={"_blank"}
+                  aria-owns={"CodingDave Instagram Link"}
+                >
+                  <InstagramIcon className={classes.socialIcon} />
+                </a>
               </Grid>
               <Grid item>
-                <LinkedInIcon className={classes.socialIcon} />
+                <a
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={""}
+                  target={"_blank"}
+                  aria-owns={"CodingDave LinkedIn Link"}
+                >
+                  <LinkedInIcon className={classes.socialIcon} />
+                </a>
               </Grid>
             </Grid>
           </Grid>
