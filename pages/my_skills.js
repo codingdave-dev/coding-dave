@@ -3,7 +3,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Typography from "@material-ui/core/Typography";
-import ProfileHeader from "../src/ui/ProfileHeader";
+import Head from 'next/head'
 
 const useStyles = makeStyles((theme) => ({
   titleText: {
@@ -100,6 +100,19 @@ const MySkills = () => {
 
   return (
     <Grid container direction={'column'}>
+      <Head>
+        <title key={'title'}>Skills - HTML, CSS, React, Redux, MaterialUI, Firebase | Coding Dave</title>
+        <meta
+            name={"description"}
+            key={"description"}
+            content={
+              "UI skills in Material UI, Bootstrap and Semantic UI.  Front and Back End - HTML, CSS, ReactJS, Redux, PHP, NodeJS, AWS and Google Firebase. "
+            }
+        />
+        <meta property={'og:title'} content={'Bringing West Coast Technology to Tennessee | Skills'} key={'og:title'}/>
+        <meta property={'og:url'} content={'codingdave.dev/my_skills'} key={'og:url'}/>
+        <link rel="canonical" key={'canonical'} href={'https://codingdave.dev/my_skills'}/>
+      </Head>
 
       <Grid item container justify={"center"} style={{ marginTop: "1em" }}>
         <Grid item>

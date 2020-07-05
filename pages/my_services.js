@@ -3,7 +3,9 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Typography from "@material-ui/core/Typography";
-import ProfileHeader from "../src/ui/ProfileHeader";
+
+import Head from "next/head";
+
 
 import ComputerIcon from "@material-ui/icons/Computer";
 import AppsIcon from "@material-ui/icons/Apps";
@@ -116,6 +118,20 @@ const MySkills = () => {
 
   return (
     <Grid container direction={"column"}>
+
+      <Head>
+        <title key={'title'}>Services | Coding Dave</title>
+        <meta
+            name={"description"}
+            key={"description"}
+            content={
+              "Multiple services including - Web/App Design, SEO, CMS, User Management, Domains and Hosting."
+            }
+        />
+        <meta property={'og:title'} content={'Bringing West Coast Technology to Tennessee | Services'} key={'og:title'}/>
+        <meta property={'og:url'} content={'codingdave.dev/my_services'} key={'og:url'}/>
+        <link rel="canonical" key={'canonical'} href={'https://codingdave.dev/my_services'}/>
+      </Head>
 
       <Grid item container justify={"center"} style={{ marginTop: "1em" }}>
         <Grid item>

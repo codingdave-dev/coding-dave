@@ -2,12 +2,12 @@ import React from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import Head from "next/head";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import ProfileHeader from "../src/ui/ProfileHeader";
 
 const useStyles = makeStyles((theme) => ({
-
   aboutContainer: {
     marginLeft: "3em",
     marginRight: "3em",
@@ -29,8 +29,23 @@ const Index = () => {
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Grid container>
+      <Head>
+        <title key={"title"}>
+          Website App Design and Development | Coding Dave
+        </title>
+        <meta
+          name={"description"}
+          key={"description"}
+          content={
+            "I provide the fastest, most modern, affordable, and aesthetic design and development services. Contact me now!"
+          }
+        />
+        <meta property={'og:title'} content={'Bringing West Coast Technology to Tennessee | About Me'} key={'og:title'}/>
+        <meta property={'og:url'} content={'codingdave.dev'} key={'og:url'}/>
+        <link rel="canonical" key={'canonical'} href={'https://codingdave.dev'}/>
+      </Head>
 
-      <ProfileHeader/>
+      <ProfileHeader />
       {/*ABOUT US TEXT*/}
       <Grid
         item
@@ -41,10 +56,7 @@ const Index = () => {
         style={{ marginTop: "3em" }}
       >
         <Grid item>
-          <Typography
-            variant={"h2"}
-            align={matchesSM ? "center" : "left"}
-          >
+          <Typography variant={"h2"} align={matchesSM ? "center" : "left"}>
             About
           </Typography>
         </Grid>

@@ -4,6 +4,8 @@ import { Grid } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
+import Head from "next/head";
+
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
 
@@ -147,6 +149,19 @@ const MyPortfolio = () => {
 
   return (
     <Grid container direction={"column"} alignItems={"center"}>
+      <Head>
+        <title key={'title'}>Portfolio | Coding Dave</title>
+        <meta
+            name={"description"}
+            key={"description"}
+            content={
+              "See a list of my previous work with links to their Git Hub and live sites."
+            }
+        />
+        <meta property={'og:title'} content={'Bringing West Coast Technology to Tennessee | Portfolio'} key={'og:title'}/>
+        <meta property={'og:url'} content={'codingdave.dev/my_portfolio'} key={'og:url'}/>
+        <link rel="canonical" key={'canonical'} href={'https://codingdave.dev/my_portfolio'}/>
+      </Head>
       <Grid item>
         <Grid item container style={{ marginTop: "1em" }}>
           <Grid item>
