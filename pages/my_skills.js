@@ -29,8 +29,6 @@ const MySkills = () => {
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const spacing = 1;
-
   const frameworks = [
     {
       id: "bootstrap",
@@ -138,7 +136,6 @@ const MySkills = () => {
             container
             direction={"column"}
             alignItems={"center"}
-            spacing={spacing}
           >
             <Grid item>
               <Typography variant={"h3"} className={classes.subText}>
@@ -147,7 +144,7 @@ const MySkills = () => {
             </Grid>
 
             {frameworks.map((framework) => (
-              <Grid key={framework.id} item>
+              <Grid key={framework.id} item style={{margin: '0.3em'}}>
                 <Typography variant={"body1"} className={classes.bodyText}>
                   {framework.name}
                 </Typography>
@@ -163,7 +160,6 @@ const MySkills = () => {
             container
             direction={"column"}
             alignItems={"center"}
-            spacing={spacing}
           >
             <Grid item>
               <Typography variant={"h3"} className={classes.subText}>
@@ -171,7 +167,7 @@ const MySkills = () => {
               </Typography>
             </Grid>
             {frontEnd.map((front) => (
-              <Grid key={front.id} item>
+              <Grid key={front.id} item style={{margin: '0.3em'}}>
                 <Typography variant={"body1"} className={classes.bodyText}>
                   {front.name}
                 </Typography>
@@ -187,7 +183,6 @@ const MySkills = () => {
             container
             direction={"column"}
             alignItems={"center"}
-            spacing={spacing}
           >
             <Grid item>
               <Typography variant={"h3"} className={classes.subText}>
@@ -195,7 +190,7 @@ const MySkills = () => {
               </Typography>
             </Grid>
             {backEnd.map((back) => (
-              <Grid key={back.id} item>
+              <Grid key={back.id} item style={{margin: '0.3em'}}>
                 <Typography variant={"body1"} className={classes.bodyText}>
                   {back.name}
                 </Typography>
