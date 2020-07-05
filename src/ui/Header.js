@@ -143,7 +143,7 @@ const Header = ({ value, setValue }) => {
   useEffect(() => {
     if (previousURL !== window.location.pathname) {
       setPreviousURL(window.location.pathname)
-      // ReactGA.pageview(window.location.pathname + window.location.search)
+      ReactGA.pageview(window.location.pathname + window.location.search)
     }
 
     [...routes].forEach((route) => {

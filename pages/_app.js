@@ -7,7 +7,7 @@ import Header from "../src/ui/Header";
 
 import ReactGA from 'react-ga'
 
-// ReactGA.initialize('pasteTrackingCodeHere')
+ReactGA.initialize('UA-171496805-1')
 
 const MyApp = (props) => {
   const { Component, pageProps } = props;
