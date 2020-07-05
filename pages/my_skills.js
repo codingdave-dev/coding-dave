@@ -89,10 +89,6 @@ const MySkills = () => {
       name: "SQL",
     },
     {
-      id: "rest",
-      name: "REST",
-    },
-    {
       id: "aws",
       name: "Amazon Web Services",
     },
