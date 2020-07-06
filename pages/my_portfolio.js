@@ -55,10 +55,10 @@ const MyPortfolio = () => {
       id: "dougiesGuide",
       name: "Dougies Guide To Dive Bars and Fine Dining",
       description:
-        "I have know Doug Eder for several years from our previous concert tours. He does love a good dive bar and has documented every single one he had been to over the years he had been on the road and still documents them to this day.",
+        "I met Dougie a few years ago on tour and he loved a good dive bar, but sometimes he would be in a new city and didn’t know where the good local spots were. We had a conversation one night where he said he’d love to come up with an app or the like to guide roadies to great local dive bars or just a good local restaurant.",
       description2:
-        "A couple of years ago, i said to Doug that he should have a website designed where he could list all his favourites.  Over a couple of beers Dougies Guide was formed.",
-      description3: "On my next day off I immediately started coding.",
+        "So that had me thinking. I said to Doug I would help design a website and eventually an app where people in our industry could sign up and add a great local spot they had been to passing through a city on tour. That is how Dougie’s Guide to Dive Bars and Fine Dining came about.",
+      description3: "",
       image: "/assets/vectors/dougiesGuide/dg_vector.jpeg",
       frontEnd: [
         {
@@ -71,16 +71,16 @@ const MyPortfolio = () => {
         },
         {
           id: 3,
-          name: 'React Redux,'
+          name: "React Redux,",
         },
         {
           id: 4,
-          name: 'React Redux Firebase,'
+          name: "React Redux Firebase,",
         },
         {
           id: 5,
-          name: 'React Redux Form,'
-        }
+          name: "React Redux Form,",
+        },
       ],
       backEnd: [
         {
@@ -109,11 +109,11 @@ const MyPortfolio = () => {
       id: "theMacEvansWedding",
       name: "The Mac Evans Wedding",
       description:
-        "A couple of years ago when my now wife and me decided to get married, i suggested we should have a website so that we can manage guest information. And the guests could RSVP to their invitations online.",
+        "I proposed to my now wife in April of 2016 and she was looking at different sites to set up a registry, RSVP, etc and did not find anything she was fond of. I then asked her if she’d like me to design something specifically for us. I looked at what some others had done and designed our wedding website based on how we were approaching our wedding.",
       description2:
-        "After thinking of a domain to use, we registered that and then i began to develop the site.  At the time i only knew how to code in HTML/CSS and PHP for the backend.  So this is what i built the website in.  Since i have developed in other backend languages since i decided to recode the entire website.",
+        "We could link our registry to our website.  Our invitations had an online code that I generated so our guests could enter on our website as well as let us know if there were any dietary restrictions or any other information we may need to let our venue know. I also linked the venue to our website and other places and things to do nearby, as where we were married had rooms for so many guests.",
       description3:
-        "As the domain is no longer registered there is no link to the site.",
+        "",
       image: "/assets/vectors/theMacEvansWedding/theMacEvans_vector.jpeg",
       frontEnd: [
         {
@@ -123,7 +123,7 @@ const MyPortfolio = () => {
         {
           id: 2,
           name: "Material UI,",
-        }
+        },
       ],
       backEnd: [
         {
@@ -151,17 +151,29 @@ const MyPortfolio = () => {
   return (
     <Grid container direction={"column"} alignItems={"center"}>
       <Head>
-        <title key={'title'}>Portfolio | Coding Dave</title>
+        <title key={"title"}>Portfolio | Coding Dave</title>
         <meta
-            name={"description"}
-            key={"description"}
-            content={
-              "See a list of my previous work with links to their Git Hub and live sites."
-            }
+          name={"description"}
+          key={"description"}
+          content={
+            "See a list of my previous work with links to their Git Hub and live sites."
+          }
         />
-        <meta property={'og:title'} content={'Bringing West Coast Technology to Tennessee | Portfolio'} key={'og:title'}/>
-        <meta property={'og:url'} content={'codingdave.dev/my_portfolio'} key={'og:url'}/>
-        <link rel="canonical" key={'canonical'} href={'https://codingdave.dev/my_portfolio'}/>
+        <meta
+          property={"og:title"}
+          content={"Bringing West Coast Technology to Tennessee | Portfolio"}
+          key={"og:title"}
+        />
+        <meta
+          property={"og:url"}
+          content={"codingdave.dev/my_portfolio"}
+          key={"og:url"}
+        />
+        <link
+          rel="canonical"
+          key={"canonical"}
+          href={"https://codingdave.dev/my_portfolio"}
+        />
       </Head>
       <Grid item>
         <Grid item container style={{ marginTop: "1em" }}>
@@ -246,24 +258,23 @@ const MyPortfolio = () => {
                       </Grid>
 
                       <Grid item>
-                        <Grid item container direction={'column'}>
+                        <Grid item container direction={"column"}>
                           {portfolio.frontEnd.map((front) => (
-                              <Grid
-                                  key={front.id}
-                                  item
-                                  style={{ marginRight: "0.5em" }}
+                            <Grid
+                              key={front.id}
+                              item
+                              style={{ marginRight: "0.5em" }}
+                            >
+                              <Typography
+                                variant={"body1"}
+                                className={classes.bodyText}
                               >
-                                <Typography
-                                    variant={"body1"}
-                                    className={classes.bodyText}
-                                >
-                                  {front.name}
-                                </Typography>
-                              </Grid>
+                                {front.name}
+                              </Typography>
+                            </Grid>
                           ))}
                         </Grid>
                       </Grid>
-
                     </Grid>
                   </Grid>
                 )}
@@ -282,42 +293,34 @@ const MyPortfolio = () => {
                       </Grid>
 
                       <Grid item>
-                        <Grid item container direction={'column'}>
+                        <Grid item container direction={"column"}>
                           {portfolio.backEnd.map((back) => (
-                              <Grid
-                                  key={back.id}
-                                  item
-                                  style={{ marginRight: "0.5em" }}
+                            <Grid
+                              key={back.id}
+                              item
+                              style={{ marginRight: "0.5em" }}
+                            >
+                              <Typography
+                                variant={"body1"}
+                                className={classes.bodyText}
                               >
-                                <Typography
-                                    variant={"body1"}
-                                    className={classes.bodyText}
-                                >
-                                  {back.name}
-                                </Typography>
-                              </Grid>
+                                {back.name}
+                              </Typography>
+                            </Grid>
                           ))}
                         </Grid>
                       </Grid>
-
-
                     </Grid>
                   </Grid>
                 )}
 
                 <Grid item style={{ marginTop: "2em" }}>
-                  <Grid
-                    item
-                    container
-                    spacing={3}
-
-                  >
-
+                  <Grid item container spacing={3}>
                     <Grid item style={{ marginRight: "1.8em" }}>
                       <Typography
-                          variant={"body1"}
-                          style={{ fontWeight: 600 }}
-                          className={classes.bodyText}
+                        variant={"body1"}
+                        style={{ fontWeight: 600 }}
+                        className={classes.bodyText}
                       >
                         Links:
                       </Typography>
