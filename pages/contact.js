@@ -3,7 +3,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-import Head from 'next/head'
+import Head from "next/head";
 
 import axios from "axios";
 import TextField from "@material-ui/core/TextField";
@@ -59,22 +59,34 @@ const Contact = ({ handleSubmit, error, submitting }) => {
   return (
     <Grid container justify={"center"}>
       <Head>
-        <title key={'title'}>Contact Us | Coding Dave</title>
+        <title key={"title"}>Contact Us | Coding Dave</title>
         <meta
-            name={"description"}
-            key={"description"}
-            content={
-              "Contact Me now for your next web/app design and development project."
-            }
+          name={"description"}
+          key={"description"}
+          content={
+            "Contact Me now for your next web/app design and development project."
+          }
         />
-        <meta property={'og:title'} content={'Bringing West Coast Technology to Tennessee | Contact'} key={'og:title'}/>
-        <meta property={'og:url'} content={'codingdave.dev/contact'} key={'og:url'}/>
-        <link rel="canonical" key={'canonical'} href={'https://codingdave.dev/contact'}/>
+        <meta
+          property={"og:title"}
+          content={"Bringing West Coast Technology to Tennessee | Contact"}
+          key={"og:title"}
+        />
+        <meta
+          property={"og:url"}
+          content={"codingdave.dev/contact"}
+          key={"og:url"}
+        />
+        <link
+          rel="canonical"
+          key={"canonical"}
+          href={"https://codingdave.dev/contact"}
+        />
       </Head>
 
       <ProfileHeader showContact={true} />
 
-      <Grid item className={classes.formContainer} style={{marginTop: '2em'}}>
+      <Grid item className={classes.formContainer} style={{ marginTop: "2em" }}>
         <Grid item container direction={"column"} spacing={2}>
           <Grid item>
             <TextField

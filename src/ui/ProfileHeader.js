@@ -32,6 +32,12 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.1em",
     },
   },
+  contactText: {
+    fontSize: "1.3em",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.1em",
+    },
+  },
   socialIcon: {
     color: theme.palette.primary.main,
     fontSize: "2em",
@@ -151,24 +157,24 @@ const ProfileHeader = ({ showContact }) => {
           {showContact && (
             <Fragment>
               <Grid item style={{ marginTop: "1em" }}>
-                <Grid item container spacing={2}>
+                <Grid item container alignItems={"center"}>
                   <Grid item>
                     <PhoneIcon className={classes.socialIcon} />
                   </Grid>
-                  <Grid item>
-                    <Typography variant={"h3"} className={classes.subText}>
+                  <Grid item style={{ marginLeft: "0.8em" }}>
+                    <Typography variant={"h3"} className={classes.contactText}>
                       +1 323 620 7662
                     </Typography>
                   </Grid>
                 </Grid>
               </Grid>
               <Grid item style={{ marginTop: "1em" }}>
-                <Grid item container spacing={2}>
+                <Grid item container alignItems={"center"}>
                   <Grid item>
                     <EmailIcon className={classes.socialIcon} />
                   </Grid>
-                  <Grid item>
-                    <Typography variant={"h3"} className={classes.subText}>
+                  <Grid item style={{ marginLeft: "0.8em" }}>
+                    <Typography variant={"h3"} className={classes.contactText}>
                       codingdave.dev@gmail.com
                     </Typography>
                   </Grid>
