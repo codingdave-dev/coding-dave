@@ -162,7 +162,7 @@ const ProfileHeader = ({ showContact }) => {
                     <PhoneIcon className={classes.socialIcon} />
                   </Grid>
                   <Grid item style={{ marginLeft: "0.8em" }}>
-                    <Typography variant={"h3"} className={classes.contactText}>
+                    <Typography variant={"h3"} className={classes.contactText} >
                       +1 323 620 7662
                     </Typography>
                   </Grid>
