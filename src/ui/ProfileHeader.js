@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
@@ -7,6 +7,8 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import PhoneIcon from "@material-ui/icons/Phone";
+import EmailIcon from "@material-ui/icons/Email";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles((theme) => ({
@@ -39,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ProfileHeader = () => {
+const ProfileHeader = ({ showContact }) => {
   const classes = useStyles();
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
@@ -145,6 +147,35 @@ const ProfileHeader = () => {
               </Grid>
             </Grid>
           </Grid>
+
+          {showContact && (
+            <Fragment>
+              <Grid item style={{ marginTop: "1em" }}>
+                <Grid item container spacing={2}>
+                  <Grid item>
+                    <PhoneIcon className={classes.socialIcon} />
+                  </Grid>
+                  <Grid item>
+                    <Typography variant={"h3"} className={classes.subText}>
+                      +1 323 620 7662
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item style={{ marginTop: "1em" }}>
+                <Grid item container spacing={2}>
+                  <Grid item>
+                    <EmailIcon className={classes.socialIcon} />
+                  </Grid>
+                  <Grid item>
+                    <Typography variant={"h3"} className={classes.subText}>
+                      codingdave.dev@gmail.com
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Fragment>
+          )}
         </Grid>
       </Grid>
     </Grid>

@@ -12,6 +12,7 @@ import Button from "@material-ui/core/Button";
 import Router from "next/router";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
+import ProfileHeader from "../src/ui/ProfileHeader";
 
 const useStyles = makeStyles((theme) => ({
   formContainer: {
@@ -70,7 +71,10 @@ const Contact = ({ handleSubmit, error, submitting }) => {
         <meta property={'og:url'} content={'codingdave.dev/contact'} key={'og:url'}/>
         <link rel="canonical" key={'canonical'} href={'https://codingdave.dev/contact'}/>
       </Head>
-      <Grid item className={classes.formContainer}>
+
+      <ProfileHeader showContact={true} />
+
+      <Grid item className={classes.formContainer} style={{marginTop: '2em'}}>
         <Grid item container direction={"column"} spacing={2}>
           <Grid item>
             <TextField
