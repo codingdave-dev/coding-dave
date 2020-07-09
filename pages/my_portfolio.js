@@ -143,7 +143,9 @@ const MyPortfolio = () => {
           name: "Firebase Storage,",
         },
       ],
+      webIcon: <LinkIcon fontSize={"large"} />,
       gitIcon: <GitHubIcon fontSize={"large"} />,
+      webLink: "https://the-mac-evans-wedding.vercel.app",
       gitHub: "https://github.com/codingdave-dev/theMacEvansWedding",
     },
   ];
