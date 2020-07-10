@@ -143,19 +143,19 @@ const ProfileHeader = ({ showContact }) => {
                   <InstagramIcon className={classes.socialIcon} />
                 </a>
               </Grid>
-              <Grid item>
-                <a
-                  style={{
-                    textDecoration: "none",
-                  }}
-                  href={""}
-                  rel={'noopener noreferrer'}
-                  target={"_blank"}
-                  aria-owns={"CodingDave LinkedIn Link"}
-                >
-                  <LinkedInIcon className={classes.socialIcon} />
-                </a>
-              </Grid>
+              {/*<Grid item>*/}
+              {/*  <a*/}
+              {/*    style={{*/}
+              {/*      textDecoration: "none",*/}
+              {/*    }}*/}
+              {/*    href={""}*/}
+              {/*    rel={'noopener noreferrer'}*/}
+              {/*    target={"_blank"}*/}
+              {/*    aria-owns={"CodingDave LinkedIn Link"}*/}
+              {/*  >*/}
+              {/*    <LinkedInIcon className={classes.socialIcon} />*/}
+              {/*  </a>*/}
+              {/*</Grid>*/}
             </Grid>
           </Grid>
 
