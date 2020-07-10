@@ -6,6 +6,7 @@ import theme from "../src/theme";
 import Header from "../src/ui/Header";
 
 import ReactGA from 'react-ga'
+import Footer from "../src/Footer";
 
 ReactGA.initialize('UA-171496805-1')
 
@@ -42,6 +43,8 @@ const MyApp = (props) => {
 
 
         <Component {...pageProps} />
+
+        <Footer/>
       </ThemeProvider>
     </Fragment>
   );

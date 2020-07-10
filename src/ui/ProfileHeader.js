@@ -95,6 +95,7 @@ const ProfileHeader = ({ showContact }) => {
                     textDecoration: "none",
                   }}
                   href={"https://github.com/codingdave-dev"}
+                  rel={'noopener noreferrer'}
                   target={"_blank"}
                   aria-owns={"CodingDave gitHub Link"}
                 >
@@ -109,6 +110,7 @@ const ProfileHeader = ({ showContact }) => {
                   href={
                     "https://www.facebook.com/codingDave.dev/?eid=ARCmHFMi1v7kKZNDB9eN9Ks5QXhSh8dR0FBIwElneNgxiVcs7sLVdmx97c_xdV3Td1r-_piMerskk50C"
                   }
+                  rel={'noopener noreferrer'}
                   target={"_blank"}
                   aria-owns={"CodingDave Facebook Link"}
                 >
@@ -121,6 +123,7 @@ const ProfileHeader = ({ showContact }) => {
                     textDecoration: "none",
                   }}
                   href={"https://twitter.com/coding_dave"}
+                  rel={'noopener noreferrer'}
                   target={"_blank"}
                   aria-owns={"CodingDave Twitter Link"}
                 >
@@ -133,6 +136,7 @@ const ProfileHeader = ({ showContact }) => {
                     textDecoration: "none",
                   }}
                   href={"https://www.instagram.com/codingdave.dev/"}
+                  rel={'noopener noreferrer'}
                   target={"_blank"}
                   aria-owns={"CodingDave Instagram Link"}
                 >
@@ -145,6 +149,7 @@ const ProfileHeader = ({ showContact }) => {
                     textDecoration: "none",
                   }}
                   href={""}
+                  rel={'noopener noreferrer'}
                   target={"_blank"}
                   aria-owns={"CodingDave LinkedIn Link"}
                 >
