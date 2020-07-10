@@ -15,11 +15,11 @@ const footerDetails = {
 };
 
 const footerRoutes = [
-  // {
-  //   id: 1,
-  //   name: "Privacy Policy",
-  //   link: "/privacy",
-  // },
+  {
+    id: 1,
+    name: "Privacy Policy",
+    link: "/privacy",
+  },
   // {
   //   id: 2,
   //   name: "Terms of Use",
