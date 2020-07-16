@@ -59,7 +59,7 @@ const MyPortfolio = () => {
       description2:
         "So that had me thinking. I said to Doug I would help design a website and eventually an app where people in our industry could sign up and add a great local spot they had been to passing through a city on tour. That is how Dougie’s Guide to Dive Bars and Fine Dining came about.",
       description3: "",
-      image: "/assets/vectors/dougiesGuide/dg_vector.jpeg",
+      image: "/assets/vectors/dougiesGuide/dg_vector.jpg",
       frontEnd: [
         {
           id: 1,
