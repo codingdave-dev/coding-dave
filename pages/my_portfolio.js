@@ -114,7 +114,7 @@ const MyPortfolio = () => {
         "We could link our registry to our website.  Our invitations had an online code that I generated so our guests could enter on our website as well as let us know if there were any dietary restrictions or any other information we may need to let our venue know. I also linked the venue to our website and other places and things to do nearby, as where we were married had rooms for so many guests.",
       description3:
         "",
-      image: "/assets/vectors/theMacEvansWedding/theMacEvans_vector.jpeg",
+      image: "/assets/vectors/theMacEvansWedding/theMacEvans_vector.jpg",
       frontEnd: [
         {
           id: 1,

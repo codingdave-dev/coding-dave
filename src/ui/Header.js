@@ -238,7 +238,7 @@ const Header = ({ value, setValue }) => {
               onClick={() => setValue(0)}
             >
               <img
-                src={"/assets/logo/logo.jpeg"}
+                src={"/assets/logo/CodingDave_Logo.jpg"}
                 className={classes.logo}
                 alt="company-logo"
               />
