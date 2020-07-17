@@ -108,7 +108,7 @@ const ProfileHeader = ({ showContact }) => {
                     textDecoration: "none",
                   }}
                   href={
-                    "https://www.facebook.com/codingDave.dev/?eid=ARCmHFMi1v7kKZNDB9eN9Ks5QXhSh8dR0FBIwElneNgxiVcs7sLVdmx97c_xdV3Td1r-_piMerskk50C"
+                    "https://www.facebook.com/codingDave.dev/"
                   }
                   rel={'noopener noreferrer'}
                   target={"_blank"}
