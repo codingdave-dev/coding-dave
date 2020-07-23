@@ -148,7 +148,7 @@ const ProfileHeader = ({ showContact }) => {
                   style={{
                     textDecoration: "none",
                   }}
-                  href={"https://www.linkedin.com/in/coding-dave-2576211b3/"}
+                  href={"https://www.linkedin.com/in/codingdave/"}
                   rel={'noopener noreferrer'}
                   target={"_blank"}
                   aria-owns={"CodingDave LinkedIn Link"}
