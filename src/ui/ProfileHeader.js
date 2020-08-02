@@ -180,7 +180,7 @@ const ProfileHeader = ({ showContact }) => {
                   </Grid>
                   <Grid item style={{ marginLeft: "0.8em" }}>
                     <Typography variant={"h3"} className={classes.contactText}>
-                      codingdave.dev@gmail.com
+                      hello@codingdave.dev
                     </Typography>
                   </Grid>
                 </Grid>
