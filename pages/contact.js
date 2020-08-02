@@ -135,7 +135,7 @@ const Contact = ({ handleSubmit, error, submitting }) => {
           </Grid>
           <Grid item style={{ marginTop: "2em" }}>
             <Grid item container justify={"center"}>
-              <Button variant={"outlined"} onClick={() => sendMessage()}>
+              <Button style={{width: '10em'}} variant={"outlined"} onClick={() => sendMessage()}>
                 {loading ? <CircularProgress /> : "Send Message"}
               </Button>
             </Grid>
