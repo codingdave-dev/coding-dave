@@ -34,6 +34,8 @@ const Contact = ({ handleSubmit, error, submitting }) => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+
+
   const sendMessage = () => {
     setLoading(true);
     axios
@@ -135,8 +137,8 @@ const Contact = ({ handleSubmit, error, submitting }) => {
           </Grid>
           <Grid item style={{ marginTop: "2em" }}>
             <Grid item container justify={"center"}>
-              <Button style={{width: '10em'}} variant={"outlined"} onClick={() => sendMessage()}>
-                {loading ? <CircularProgress /> : "Send Message"}
+              <Button style={{width: '10em'}} variant={"outlined"} disabled={!name || !email || !message} onClick={() => sendMessage()}>
+                {loading ? <CircularProgress size={25}/> : "Send Message"}
               </Button>
             </Grid>
           </Grid>
