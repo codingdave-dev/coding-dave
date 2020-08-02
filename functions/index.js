@@ -20,8 +20,8 @@ exports.sendMail = functions.https.onRequest((request, response) => {
 
     const mailOptions = {
       from: "CodingDave Website Messsage <codingdave.dev.nodemailer@gmail.com>",
-      to: "codingdave.dev@gmail.com",
-      subject: "Message Received From Website!",
+      to: "webmaster@codingdave.dev",
+      subject: "MESSAGE RECEIVED FROM WEBSITE!",
       html: `<p style="font-size: 16px">From: ${name}</p><p style="font-size: 16px">Email: ${email}</p><p style="font-size: 16px">Phone Number: ${phone}</p><p style="font-size: 16px">Message: ${message}</p>`,
     };
 
