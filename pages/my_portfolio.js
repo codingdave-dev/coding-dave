@@ -52,6 +52,39 @@ const MyPortfolio = () => {
 
   const portfolios = [
     {
+      id: "theRoofingGuys",
+      name: "The Roofing Guys",
+      description:
+          "I was approached by the client who had already started created a website himself on Wix. But he didn't get the right feel and look he wanted for his business website. So I spoke with him for about 40 minutes collected all the relevant information needed and started building his website in Wordpress using Divi Theme. ",
+      description2:
+          "Once the final touches were made I made the site live and handed it over to the client. Who will update it when he wishes.",
+      description3: "",
+      image: "/assets/vectors/theRoofingGuys/theRoofingGuys_vector.jpg",
+      frontEnd: [
+        {
+          id: 0,
+          name: "Wordpress,",
+        },
+        {
+          id: 1,
+          name: "Divi Theme,",
+        }
+      ],
+      backEnd: [
+        {
+          id: 1,
+          name: "Bluehost Hosting,",
+        },
+        {
+          id: 2,
+          name: "Domain Registration,",
+        }
+      ],
+      webIcon: <LinkIcon fontSize={"large"} />,
+      gitIcon: <GitHubIcon fontSize={"large"} />,
+      webLink: "https://theroofingguys918.com",
+    },
+    {
       id: "klippitMerchant",
       name: "Klippit Merchant Waitlist",
       description:
